@@ -5,7 +5,6 @@ import com.line.context.User;
 import java.sql.*;
 
 public abstract class UserDao {
-
     public abstract Connection getConnection() throws ClassNotFoundException, SQLException;
 
     public void add(User user) throws SQLException, ClassNotFoundException {
