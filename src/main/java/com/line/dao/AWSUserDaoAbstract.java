@@ -3,7 +3,7 @@ package com.line.dao;
 import java.sql.*;
 import java.util.Map;
 
-public class AWSUserDaoImpl extends UserDao {
+public class AWSUserDaoAbstract extends UserDaoAbstract {
 
     @Override
     public Connection getConnection() throws ClassNotFoundException, SQLException {
