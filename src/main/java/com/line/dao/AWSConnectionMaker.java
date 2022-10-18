@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Map;
 
-public class ConnectionMaker {
+public class AWSConnectionMaker {
     public Connection makeConnection() throws ClassNotFoundException, SQLException {
         Map<String, String> env = System.getenv();
         String dbHost = env.get("DB_HOST");

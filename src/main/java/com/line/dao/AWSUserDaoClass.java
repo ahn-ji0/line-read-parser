@@ -9,10 +9,13 @@ import java.sql.SQLException;
 
 public class AWSUserDaoClass {
 
-    ConnectionMaker connectionMaker = new ConnectionMaker();
+    AWSConnectionMaker AWSConnectionMaker;
 
+    public AWSUserDaoClass(){
+        this.AWSConnectionMaker = new AWSConnectionMaker();
+    }
     public void add(User user) throws SQLException, ClassNotFoundException {
-        Connection conn = connectionMaker.makeConnection();
+        Connection conn = AWSConnectionMaker.makeConnection();
         PreparedStatement pstm = conn.prepareStatement("INSERT INTO users(id,name,password) VALUES (?,?,?)");
         pstm.setString(1,user.getId());
         pstm.setString(2,user.getName());
@@ -27,7 +30,7 @@ public class AWSUserDaoClass {
 
     public User get(String id) throws ClassNotFoundException, SQLException {
 
-        Connection conn = connectionMaker.makeConnection();
+        Connection conn = AWSConnectionMaker.makeConnection();
         PreparedStatement pstm = conn.prepareStatement("SELECT id, name, password FROM users WHERE id = ?");
         pstm.setString(1,id);
 
