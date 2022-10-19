@@ -20,10 +20,16 @@ class UserDaoTest {
     void addAndSelect() throws SQLException, ClassNotFoundException {
 
         UserDao userDao = new UserDaoFactory().awsUserDao();
-        User user = new User("3","안지영","3456");
+
+        userDao.deleteAll();
+
+        User user = new User("1","안지영","3456");
         userDao.add(user);
 
-        User selectedUser = userDao.get("3");
+        User selectedUser = userDao.get("1");
         Assertions.assertEquals("안지영",selectedUser.getName());
+
+        Assertions.assertEquals(1,userDao.getCount());
+
     }
 }
