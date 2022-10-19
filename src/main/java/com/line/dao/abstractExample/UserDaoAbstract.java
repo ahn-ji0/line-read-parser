@@ -1,4 +1,4 @@
-package com.line.dao;
+package com.line.dao.abstractExample;
 
 import com.line.context.User;
 
