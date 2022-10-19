@@ -1,4 +1,4 @@
-package com.line.dao;
+package com.line.dao.abstractExample;
 
 import java.sql.*;
 import java.util.Map;
