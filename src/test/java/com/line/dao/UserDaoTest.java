@@ -18,8 +18,8 @@ class UserDaoTest {
     @DisplayName("DB쿼리 실행")
 
     void addAndSelect() throws SQLException, ClassNotFoundException {
-        ConnMaker connMaker = new AWSConnMaker();
-        UserDao userDao = new UserDao(connMaker);
+
+        UserDao userDao = new UserDaoFactory().awsUserDao();
         User user = new User("3","안지영","3456");
         userDao.add(user);
 
