@@ -1,6 +1,7 @@
-package com.line.dao;
+package com.line.dao.classExample;
 
 import com.line.context.User;
+import com.line.dao.classExample.AWSConnectionMaker;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,7 +10,7 @@ import java.sql.SQLException;
 
 public class AWSUserDaoClass {
 
-    AWSConnectionMaker AWSConnectionMaker;
+    com.line.dao.classExample.AWSConnectionMaker AWSConnectionMaker;
 
     public AWSUserDaoClass(){
         this.AWSConnectionMaker = new AWSConnectionMaker();

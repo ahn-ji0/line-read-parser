@@ -1,4 +1,4 @@
-package com.line.dao;
+package com.line.dao.classExample;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
