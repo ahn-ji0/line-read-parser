@@ -1,6 +1,6 @@
 package com.line.dao;
 
-import com.line.context.User;
+import com.line.domain.User;
 import com.line.dao.abstractExample.AWSUserDaoAbstract;
 import com.line.dao.abstractExample.UserDaoAbstract;
 import org.junit.jupiter.api.Assertions;

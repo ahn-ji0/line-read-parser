@@ -1,6 +1,6 @@
 package com.line.dao.abstractExample;
 
-import com.line.context.User;
+import com.line.domain.User;
 
 import java.sql.*;
 
