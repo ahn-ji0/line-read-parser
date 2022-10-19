@@ -1,4 +1,4 @@
-package com.line.context;
+package com.line.domain;
 
 //user data object(value object)
 
