@@ -1,7 +1,6 @@
 package com.line.dao.classExample;
 
-import com.line.context.User;
-import com.line.dao.classExample.AWSConnectionMaker;
+import com.line.domain.User;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

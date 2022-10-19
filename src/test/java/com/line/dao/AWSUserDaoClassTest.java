@@ -1,12 +1,10 @@
 package com.line.dao;
 
-import com.line.context.User;
+import com.line.domain.User;
 import com.line.dao.classExample.AWSUserDaoClass;
 import org.junit.jupiter.api.Test;
 
 import java.sql.SQLException;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class AWSUserDaoClassTest {
     @Test
