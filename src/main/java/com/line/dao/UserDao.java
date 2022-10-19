@@ -8,6 +8,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+// ../connection의 인터페이스 ConnMaker를 이용하여 connection 분리
+
 public class UserDao {
 
     ConnMaker connMaker;
