@@ -1,7 +1,7 @@
 package com.line.dao;
 
 import com.line.connection.ConnMaker;
-import com.line.context.User;
+import com.line.domain.User;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
